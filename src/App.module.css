@@ -1,0 +1,362 @@
+.App {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    display: grid;
+    justify-content: center;
+  }
+  
+  body {
+    overflow-x: hidden;
+  }
+  .block1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin: 20px;
+  }
+   .block3, .block4, .block5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin: 20px;
+  }
+  
+  .TextContent{
+
+    width: 100%;
+    max-width: 800px;
+    text-align: left;
+  
+
+  }
+  
+  .TextContent1 {
+    width: 100%;
+    max-width: 1100px;
+    
+    
+  }
+  
+  .TextContent h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px; 
+  }
+  
+  .TextContent h2 {
+    color: black;
+    font-weight: 500;
+    width: 580px;
+    margin-top: 0;
+    margin-left: 10px;
+  }
+  
+  .TextContent1 {
+    text-align: center;
+   
+  }
+  
+
+
+.TextContent1 p{
+ text-align: center;
+ 
+  
+}
+
+  .TextContent1 a {
+    color: #B84234;
+    margin-left: 5px;
+  }
+  
+
+  .profile{
+   
+  }
+  .Image {
+    width: 500px;
+    max-width: 400px;
+    height: 400px;
+    margin: 20px 0;
+ 
+    border-radius: 50%;
+    background-color: #B84234;
+  }
+  
+  button {
+    background-color: #B84234;
+    color: white;
+    border: none;
+    padding: 14px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1, h2 {
+    color: #B84234;
+  }
+  
+  h1 {
+    margin-top: 20px;
+  }
+  
+
+
+
+
+  .SuccessSubHeading{
+    max-width: 1000px;
+  }
+
+  .ImpactIcons, .card, .eventcards, .successcards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .ProgramCard, .EventCard, .SuccessCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #B84234;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .ProgramCard:hover, .EventCard:hover, .SuccessCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .ProgramImage, .EventImage, .SuccessImage {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .ProgramText, .EventText, .SuccessText {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .ProgramButton, .EventButton, .SuccessButton {
+    margin-top: 20px;
+    background-color: #B84234;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .ProgramButton:hover, .EventButton:hover, .SuccessButton:hover {
+    background-color: #b05d53;
+  }
+  
+  .ImpactHeading, .ProgramHeading, .EventHeading, .SuccessHeading {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  
+  .ImpactText {
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 2px solid #B84234;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .ImpactText b {
+    margin-top: 10px;
+    width: 100%;
+  }
+  
+  .ImpactIcon {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .ThrivingCommunity {
+    background-color: #B84234;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .KnowMoreButton {
+    border: 1px solid white;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .KnowMoreButton:hover {
+    background-color: #a04962;
+    color: white;
+  }
+  
+  @media (max-width: 1200px) {
+    .TextContent h1 {
+      font-size: 2.5rem;
+    }
+  
+    .TextContent {
+      max-width: 100%;
+    }
+  
+    h1, h2 {
+      font-size: 2rem;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    
+    .block1{
+        padding: 30px;
+        display: grid;
+        justify-content: center;
+    }
+    
+    .block3, .block4, .block5 {
+      padding: 30px;
+    }
+  
+    .TextContent h1 {
+      font-size: 2rem;
+    }
+  
+    .ProgramCard, .EventCard, .SuccessCard {
+      max-width: 300px;
+    }
+  
+    h1, h2 {
+      font-size: 1.75rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .block1{
+        padding: 20px;
+        display: grid;
+    }
+    
+    .block3, .block4, .block5 {
+      padding: 20px;
+    }
+  
+    .Image {
+      max-width: 80%;
+      margin: 20px 0;
+    }
+  
+    .TextContent {
+      max-width: 100%;
+      text-align: center;
+    }
+  
+    .ImpactIcons, .card, .eventcards, .successcards {
+      flex-direction: column;
+    }
+  
+    .ProgramCard, .EventCard, .SuccessCard {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .ProgramText, .EventText, .SuccessText {
+      font-size: 0.9rem;
+    }
+  
+    h1, h2 {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .block1, .block3, .block4, .block5 {
+      padding: 10px;
+    }
+  
+    .ProgramCard, .EventCard, .SuccessCard {
+      max-width: 100%;
+    }
+  
+    .TextContent h1 {
+      font-size: 1.5rem;
+    }
+  
+    .TextContent h2 {
+      font-size: 1rem;
+    }
+  
+    h1, h2 {
+      font-size: 1.25rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .Image {
+      width: 100%;
+      height: auto;
+      margin: 10px 0;
+    }
+  
+    .TextContent {
+      text-align: center;
+    }
+  
+    .block1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    h1, h2 {
+      font-size: 1rem;
+    }
+  
+    footer {
+      font-size: 0.75rem;
+    }
+  }
+  

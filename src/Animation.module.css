@@ -1,0 +1,197 @@
+/* Basic styling for the container */
+.factoryContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black; /* Black background for blueprint effect */
+    overflow: hidden;
+  }
+  
+  .factory {
+    position: relative;
+    width: 80%;
+    height: 80%;
+  }
+  
+  /* Smokestack animation */
+  .smokestack {
+    position: absolute;
+    bottom: 50%;
+    left: 5%;
+    width: 1%;
+    height: 50%;
+    background-color: white;
+    animation: growSmokestack 3s ease-in-out forwards;
+  }
+  
+  @keyframes growSmokestack {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 50%;
+    }
+  }
+  
+  /* Building animation */
+  .building {
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    width: 10%;
+    height: 0;
+    border: 2px solid white;
+    background-color: transparent;
+    animation: growBuilding 3s ease-in-out forwards 3s; /* Delay to start after smokestack */
+  }
+  
+  @keyframes growBuilding {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: 50%;
+    }
+  }
+  
+  /* Floor lines */
+  .floor {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2%;
+    background-color: white;
+    opacity: 0;
+    animation: drawFloor 1s ease-in-out forwards;
+  }
+  
+  .floor:nth-child(1) { top: 20%; animation-delay: 4s; }
+  .floor:nth-child(2) { top: 40%; animation-delay: 5s; }
+  .floor:nth-child(3) { top: 60%; animation-delay: 6s; }
+  .floor:nth-child(4) { top: 80%; animation-delay: 7s; }
+  
+  @keyframes drawFloor {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* Windows */
+  .window {
+    position: absolute;
+    width: 15%;
+    height: 15%;
+    border: 2px solid white;
+    background-color: transparent;
+    opacity: 0;
+    animation: appearWindow 1s ease-in-out forwards;
+  }
+  
+  .window:nth-child(5) { top: 10%; left: 10%; animation-delay: 8s; }
+  .window:nth-child(6) { top: 10%; left: 70%; animation-delay: 8.5s; }
+  .window:nth-child(7) { top: 50%; left: 10%; animation-delay: 9s; }
+  .window:nth-child(8) { top: 50%; left: 70%; animation-delay: 9.5s; }
+  
+  @keyframes appearWindow {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* Crane animation */
+  .crane {
+    position: absolute;
+    bottom: 50%;
+    left: 60%;
+    width: 3%;
+    height: 25%;
+    background-color: white;
+    animation: moveCrane 6s linear infinite;
+  }
+  
+  .craneArm {
+    position: absolute;
+    top: 0;
+    left: -20%;
+    width: 30%;
+    height: 2%;
+    background-color: white;
+  }
+  
+  .craneHook {
+    position: absolute;
+    top: 2%;
+    left: -5%;
+    width: 5%;
+    height: 10%;
+    background-color: white;
+    animation: moveCraneHook 6s linear infinite;
+  }
+  
+  @keyframes moveCrane {
+    0%, 100% {
+      left: 60%;
+    }
+    50% {
+      left: 30%;
+    }
+  }
+  
+  @keyframes moveCraneHook {
+    0%, 100% {
+      top: 2%;
+    }
+    50% {
+      top: 20%;
+    }
+  }
+  
+  /* Conveyor belt */
+  .conveyor {
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    width: 80%;
+    height: 5%;
+    background-color: white;
+    animation: moveConveyor 6s linear infinite;
+  }
+  
+  @keyframes moveConveyor {
+    0%, 100% {
+      left: 10%;
+    }
+    50% {
+      left: -10%;
+    }
+  }
+  
+  .box {
+    position: absolute;
+    bottom: 0;
+    width: 5%;
+    height: 100%;
+    background-color: transparent;
+    border: 2px solid white;
+    animation: moveBox 6s linear infinite;
+  }
+  
+  .box:nth-child(1) { left: 0%; }
+  .box:nth-child(2) { left: 50%; animation-delay: 3s; }
+  
+  @keyframes moveBox {
+    0%, 100% {
+      left: 0%;
+    }
+    50% {
+      left: 100%;
+    }
+  }
+  

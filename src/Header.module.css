@@ -1,0 +1,150 @@
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #b8685f;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: white;
+}
+
+.LogoContainer {
+  display: flex;
+  align-items: center;
+}
+
+.Logo {
+  height: 50px;
+}
+
+.NavContainer {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.SignUpButton {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-left: 15px;
+  gap: 5px;
+  font-size: 1.2rem;
+}
+
+.SignUpButton:hover {
+  border: 1px solid #B84234;
+}
+
+.LoginIcon {
+  width: 20px;
+}
+
+.LoginText {
+  color: #B84234;
+  font-weight: bold;
+}
+
+.HeaderItem {
+  background-color: #B84234;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 10px 15px;
+  text-align: center;
+}
+
+.HeaderItem:hover {
+  text-decoration: underline;
+}
+
+.DropdownContainer {
+  position: relative;
+}
+
+.DropdownContent {
+  display: block;
+  position: absolute;
+  min-width: 200px;
+  z-index: 1;
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.DropdownItem {
+  color: #B84234;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  background-color: white;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  margin-top: 3px;
+  width: 100%;
+}
+
+.DropdownItem:hover {
+  background-color: #9e3c2e;
+  color: white;
+}
+
+.Hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.Hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: #B84234;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+@media (max-width: 768px) {
+  .NavContainer {
+    display: none;
+  }
+
+  .Hamburger {
+    display: flex;
+  }
+
+  .MobileNav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1;
+    padding: 10px 0;
+  }
+
+  .MobileNav .HeaderItem {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .MobileNav .DropdownContent {
+    position: static;
+    width: 100%;
+    background-color: #B84234;
+  }
+}
