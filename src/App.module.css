@@ -3,6 +3,8 @@
     font-family: Arial, sans-serif;
     display: grid;
     justify-content: center;
+ 
+    
   }
   
   body {
@@ -12,7 +14,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
@@ -20,6 +22,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
     margin: 20px;
+    
   }
    .block3, .block4, .block5 {
     display: flex;
@@ -32,13 +35,16 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
     margin: 20px;
+    
+   
   }
   
   .TextContent{
-
+  
     width: 100%;
     max-width: 800px;
-    text-align: left;
+    text-align:center;
+   
   
 
   }
@@ -52,17 +58,25 @@
   
   .TextContent h1 {
     font-size: 3.5rem;
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
+    text-align: center;
   }
+
   
   .TextContent h2 {
     color: black;
     font-weight: 500;
-    width: 580px;
+   
     margin-top: 0;
     margin-left: 10px;
+    text-align: center;
   }
-  
+  .TextContent button{
+    align-items: center;
+    
+  }
+
+
   .TextContent1 {
     text-align: center;
    
@@ -220,6 +234,12 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
+
+  .ThrivingCommunity P{
+    color: white;
+    font-size: 1.5rem;
+  }
+
   .KnowMoreButton {
     border: 1px solid white;
     color: white;
@@ -231,7 +251,7 @@
   }
   
   .KnowMoreButton:hover {
-    background-color: #a04962;
+    background-color:  #d2776d;
     color: white;
   }
   
@@ -252,11 +272,15 @@
   @media (max-width: 992px) {
     
     .block1{
-        padding: 30px;
+       
         display: grid;
         justify-content: center;
     }
     
+    .TextContent button{
+
+      
+    }
     .block3, .block4, .block5 {
       padding: 30px;
     }
@@ -280,6 +304,22 @@
         display: grid;
     }
     
+    .block1 {
+      flex-direction: column;
+    }
+
+    .TextContent {
+      text-align: center;
+    }
+
+    .TextContent h1, .TextContent h2, .TextContent button {
+      margin-left: 0;
+    }
+
+    .TextContent h2 {
+      width: 100%;
+    }
+  
     .block3, .block4, .block5 {
       padding: 20px;
     }

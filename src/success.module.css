@@ -1,0 +1,198 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.header {
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.banner {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.bannerImage {
+  width: 100%;
+  height: auto;
+}
+
+.bannerText {
+  position: absolute;
+  top: 40%;
+  left: 38%;
+  transform: translate(-50%, -40%);
+  padding: 20px;
+  border-radius: 5px;
+  text-align: left;
+  width: 80%;
+  max-width: 800px;
+}
+
+.bannerText h2 {
+  font-size: 2.5rem;
+  margin: 0;
+  color: #B84234;
+}
+
+.bannerText h3 {
+  font-size: 1.2rem;
+  margin: 10px 0 0 0;
+  color: black;
+  width: 100%;
+  text-align: left;
+}
+
+.stories {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.story {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  width: calc(33.333% - 20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+
+.storyImage {
+  width: 100%;
+  height: auto;
+}
+
+.storyContent {
+  padding: 20px;
+}
+
+.storyContent h4 {
+  font-size: 1.2rem;
+  color: #333;
+  margin: 10px 0;
+}
+
+.storyContent p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.footer {
+  margin-top: 40px;
+}
+
+.footer p {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 20px 0;
+}
+
+.ctaButton {
+  background-color: #B84234;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.ctaButton:hover {
+  background-color: #c2645a;
+}
+
+.ThrivingCommunity {
+  background-color: #B84234;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.ThrivingCommunity p {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.KnowMoreButton {
+  border: 1px solid white;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.KnowMoreButton:hover {
+  background-color: #d2776d;
+  color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .bannerText h2 {
+    font-size: 2rem;
+  }
+
+  .bannerText h3 {
+    font-size: 1rem;
+  }
+
+  .story {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .bannerText {
+    width: 90%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    text-align: center;
+  }
+
+  .bannerText h2 {
+    font-size: 1.5rem;
+  }
+
+  .bannerText h3 {
+    font-size: 0.9rem;
+  }
+
+  .story {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .bannerText h2 {
+    font-size: 1.2rem;
+  }
+
+  .bannerText h3 {
+    font-size: 0.8rem;
+  }
+}

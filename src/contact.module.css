@@ -1,0 +1,211 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.contactUs {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  justify-content: center;
+}
+
+.banner {
+  grid-column: span 2;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.bannerImage {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+}
+
+.bannerText {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 800px;
+  box-sizing: border-box;
+}
+
+.bannerText h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: black;
+  text-align: left;
+}
+
+.bannerText p {
+  font-size: 1.2em;
+  color: #2d2b2b;
+  text-align: left;
+  width: 90%;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  padding: 20px;
+  justify-content: center;
+  background-color: #fff;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup label {
+  font-size: 1.1em;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.formGroup input,
+.formGroup textarea {
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.submitButton {
+  padding: 10px 20px;
+  font-size: 1.2em;
+  color: #fff;
+  background-color: #B84234;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.submitButton:hover {
+  background-color: #99302b;
+}
+
+.contactDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.contactDetails h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.contactDetails p {
+  font-size: 1.1em;
+  color: #333;
+  margin: 0;
+}
+
+.contactDetails a {
+  color: #B84234;
+  text-decoration: none;
+}
+
+.contactDetails a:hover {
+  text-decoration: underline;
+}
+
+.contactDetails img {
+  width: 50px;
+  height: 50px;
+  margin-right: 30px;
+  vertical-align: middle;
+}
+
+.ThrivingCommunity {
+  background-color: #B84234;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.ThrivingCommunity P{
+  color: white;
+  font-size: 1.5rem;
+}
+
+.KnowMoreButton {
+  border: 1px solid white;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.KnowMoreButton:hover {
+  background-color:  #d2776d;
+  color: white;
+}
+
+
+@media (max-width: 768px) {
+  .contactUs {
+    grid-template-columns: 1fr;
+  }
+
+  .banner {
+    grid-column: span 1;
+  }
+
+  .contactForm,
+  .contactDetails {
+    margin-top: 20px;
+  }
+
+  .bannerText h1 {
+    font-size: 1.2em;
+    text-align: left;
+  }
+
+  .bannerText p {
+    font-size: 1em;
+    text-align: left;
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .bannerText h1 {
+    font-size: 1.5em;
+  }
+
+  .bannerText p {
+    font-size: 0.9em;
+  }
+}

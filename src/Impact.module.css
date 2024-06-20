@@ -1,0 +1,220 @@
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 46px;
+  color: black;
+  text-align: center;
+  animation: fadeIn 2s ease-in-out;
+}
+
+header h2 {
+  font-size: 24px;
+  color: black;
+  margin-bottom: 20px;
+  text-align: left;
+  animation: fadeIn 3s ease-in-out;
+}
+
+.banner {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.bannerImage {
+  width: 100%;
+  height: auto;
+}
+
+.bannerText {
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  transform: translate(-20%, -40%);
+  color: black;
+  padding: 10px 20px;
+  border-radius: 5px;
+  width: 60%; 
+  max-width: 800px; 
+  text-align: left;
+}
+
+.bannerText h1 {
+  color: #B84234;
+  font-size: 2.5rem;
+  text-align: left;
+}
+
+.bannerText p {
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.block {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  transition: transform 0.3s ease;
+  box-sizing: border-box;
+  animation: fadeIn 1s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fullWidthBlock {
+  grid-column: span 3;
+}
+
+.block:hover {
+  transform: translateY(-10px);
+}
+
+.eventImage {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.blockHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.block h3 {
+  font-size: 24px;
+  color: #B84234;
+  margin: 0;
+}
+
+.block p {
+  font-size: 16px;
+  color: #666;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+footer {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+footer h3 {
+  font-size: 24px;
+  color: #B84234;
+}
+
+footer p {
+  font-size: 16px;
+  color: #666;
+}
+
+.ThrivingCommunity {
+  background-color: #B84234;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ThrivingCommunity p {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.KnowMoreButton {
+  border: 1px solid white;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.KnowMoreButton:hover {
+  background-color: #d2776d;
+  color: white;
+}
+
+@media (max-width: 1024px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+
+  .fullWidthBlock {
+    grid-column: span 1;
+  }
+
+  .bannerText {
+    width: 80%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    text-align: center;
+  }
+
+  .bannerText h1 {
+    font-size: 2rem;
+  }
+
+  .bannerText p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .bannerText {
+    width: 90%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    text-align: center;
+  }
+
+  .bannerText h1 {
+    font-size: 1.5rem;
+  }
+
+  .bannerText p {
+    font-size: 0.9rem;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

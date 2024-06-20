@@ -1,8 +1,6 @@
 import React from "react";
 import classes from "./About.module.css";
-import pic from "./banner.jpg";
-import Header from "./Header";
-import Footer from "./Footer";
+import pic from "./Aboutus.jpg";
 import history from "./history.png";
 import about from "./ic.png";
 import vision from "./icon1.png";
@@ -14,47 +12,37 @@ import h2 from "./compassion (1).png";
 import h3 from "./excellence.png";
 import h4 from "./learning.png";
 import h5 from "./services.png";
-import h6 from "./spiritual.png"
-import Header from "./Header";
+import h6 from "./spiritual.png";
+import ceoImage from "./ceo.jpeg"; 
+import chairmanImage from "./chairman.jpeg"; 
 
 const About = () => {
   return (
     <div className={classes.aboutContainer}>
-      <Header />
       <div
         className={classes.banner}
-        style={{ backgroundImage: `url(${pic})` }}
+        
       >
         <div className={classes.tagline}>
-          Fostering Growth and Dignity in Every Life We Touch
+          <h2>About Us</h2>
+          <p>Fostering Growth and Dignity in Every Life We Touch</p>
         </div>
       </div>
-     
-        <section className={classes.aboutSection}>
-          
-            <div className={classes.headingContainer1}>
-              <img
-                src={about}
-                alt="About Us Icon"
-                className={classes.headingIcon}
-              />
-              <h2>About Us</h2>
-            </div>
-            <div className={classes.sectionContent1}>
-              <p>
-                Welcome to the Bhaktivedanta International Academy for Applied
-                Spiritual Technology, where we are dedicated to empowering
-                individuals through holistic development and spiritual
-                enlightenment. As a leading institution founded by the ISKCON
-                Youth Forum, Bhubaneswar, we are committed to nurturing the
-                potential of youth and women, equipping them with essential
-                skills for personal and professional success.
-              </p>
-            </div>
-          
-        </section>
-      
 
+      <section className={classes.aboutSection}>
+     
+        <div className={classes.sectionContent1}>
+          <p>
+            Welcome to the Bhaktivedanta International Academy for Applied
+            Spiritual Technology, where we are dedicated to empowering
+            individuals through holistic development and spiritual
+            enlightenment. As a leading institution founded by the ISKCON
+            Youth Forum, Bhubaneswar, we are committed to nurturing the
+            potential of youth and women, equipping them with essential
+            skills for personal and professional success.
+          </p>
+        </div>
+      </section>
 
       <div className={classes.restContent}>
         <div className={classes.boxHeading}>
@@ -63,11 +51,7 @@ const About = () => {
         <section className={classes.squareBox}>
           <div className={classes.sectionContainer}>
             <div className={classes.headingContainer}>
-              <img
-                src={history}
-                alt="History Icon"
-                className={classes.headingIcon}
-              />
+              <img src={history} alt="History Icon" className={classes.headingIcon} />
               <h2>Our History</h2>
             </div>
             <div className={classes.sectionContent}>
@@ -89,11 +73,7 @@ const About = () => {
         <section className={classes.squareBox}>
           <div className={classes.sectionContainer}>
             <div className={classes.headingContainer}>
-              <img
-                src={vision}
-                alt="Vision Icon"
-                className={classes.headingIcon}
-              />
+              <img src={leadership} alt="Vision Icon" className={classes.headingIcon} />
               <h2>Our Vision</h2>
             </div>
             <div className={classes.sectionContent}>
@@ -112,11 +92,7 @@ const About = () => {
         <section className={classes.squareBox}>
           <div className={classes.sectionContainer}>
             <div className={classes.headingContainer}>
-              <img
-                src={mission}
-                alt="Mission Icon"
-                className={classes.headingIcon}
-              />
+              <img src={mission} alt="Mission Icon" className={classes.headingIcon} />
               <h2>Our Mission</h2>
             </div>
             <div className={classes.sectionContent}>
@@ -134,11 +110,7 @@ const About = () => {
         <section className={classes.squareBox}>
           <div className={classes.sectionContainer}>
             <div className={classes.headingContainer}>
-              <img
-                src={leadership}
-                alt="Leadership Icon"
-                className={classes.headingIcon}
-              />
+              <img src={vision} alt="Leadership Icon" className={classes.headingIcon} />
               <h2>Leadership</h2>
             </div>
             <div className={classes.sectionContent}>
@@ -154,15 +126,34 @@ const About = () => {
           </div>
         </section>
 
+
+
+        <section className={classes.teamSection}>
+          <h1>Our Team</h1>
+<div className={classes.team}>
+          <div className={classes.teamBox}>
+            <div className={classes.teamMember}>
+              <img src={ceoImage} alt="Debansh Das Sharma - CEO" className={classes.teamImage} />
+              <h3>Debansh Das Sharma</h3>
+              <p>CEO</p>
+            </div>
+            </div>
+            <div className={classes.teamBox}>
+ 
+            <div className={classes.teamMember}>
+              <img src={chairmanImage} alt="Tukaram Das - Chairman" className={classes.teamImage} />
+              <h3>Tukaram Das</h3>
+              <p>Chairman</p>
+            </div>
+            </div>
+            </div>
+        </section>
+
         <section className={classes.approachSection}>
           <h1>Our Approach</h1>
           <div className={classes.approachContent}>
             <div className={classes.imageContainer}>
-              <img
-                src={approachImage}
-                alt="Approach"
-                className={classes.approachImage}
-              />
+              <img src={approachImage} alt="Approach" className={classes.approachImage} />
               <div className={classes.quote}>
                 <p>
                   At BI-FAST, we adopt a holistic approach to skill development,
@@ -176,7 +167,6 @@ const About = () => {
             </div>
             <div className={classes.textContainer}>
               <div className={classes.para}>
-              
                 <h3>Objectives</h3>
                 <p>
                   To empower youth and women through employability skill
@@ -184,26 +174,20 @@ const About = () => {
                 </p>
               </div>
               <div className={classes.para}>
-              
-                
                 <p>
                   To foster a culture of innovation, creativity, and
                   entrepreneurship.
                 </p>
               </div>
               <div className={classes.para}>
-              
-                
                 <p>To promote spiritual awareness and personal growth.</p>
               </div>
               <div className={classes.para}>
-             
                 <p>
                   To cultivate ethical leadership and social responsibility.
                 </p>
               </div>
               <div className={classes.para}>
-             
                 <p>
                   To create a supportive community of like-minded individuals
                   committed to positive change.
@@ -215,11 +199,7 @@ const About = () => {
         <section className={classes.squareBox}>
           <div className={classes.sectionContainer}>
             <div className={classes.headingContainer}>
-              <img
-                src={h3}
-                alt="Excellence Icon"
-                className={classes.headingIcon}
-              />
+              <img src={h3} alt="Excellence Icon" className={classes.headingIcon} />
               <h2>Excellence</h2>
             </div>
             <div className={classes.sectionContent}>
@@ -236,11 +216,7 @@ const About = () => {
         <section className={classes.squareBox}>
           <div className={classes.sectionContainer}>
             <div className={classes.headingContainer}>
-              <img
-                src={h4}
-                alt="Learning Icon"
-                className={classes.headingIcon}
-              />
+              <img src={h4} alt="Learning Icon" className={classes.headingIcon} />
               <h2>Lifelong Learning</h2>
             </div>
             <div className={classes.sectionContent}>
@@ -257,11 +233,7 @@ const About = () => {
         <section className={classes.squareBox}>
           <div className={classes.sectionContainer}>
             <div className={classes.headingContainer}>
-              <img
-                src={h5}
-                alt="Services Icon"
-                className={classes.headingIcon}
-              />
+              <img src={h5} alt="Services Icon" className={classes.headingIcon} />
               <h2>Service</h2>
             </div>
             <div className={classes.sectionContent}>
@@ -278,11 +250,7 @@ const About = () => {
         <section className={classes.squareBox}>
           <div className={classes.sectionContainer}>
             <div className={classes.headingContainer}>
-              <img
-                src={h6}
-                alt="Spiritual Icon"
-                className={classes.headingIcon}
-              />
+              <img src={h6} alt="Spiritual Icon" className={classes.headingIcon} />
               <h2>Spirituality</h2>
             </div>
             <div className={classes.sectionContent}>
@@ -303,7 +271,6 @@ const About = () => {
         </section>
       </div>
       <div className={classes.stripe}>WE BELIEVE IN GROWTH</div>
-      <Footer />
     </div>
   );
 };

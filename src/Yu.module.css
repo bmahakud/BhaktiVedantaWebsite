@@ -1,0 +1,215 @@
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 36px;
+  color: black;
+  text-align: center;
+  animation: fadeIn 2s ease-in-out;
+}
+
+header h2 {
+  font-size: 24px;
+  color: grey;
+  margin-bottom: 20px;
+  text-align: center;
+  animation: fadeIn 3s ease-in-out;
+}
+
+.banner {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.bannerImage {
+  width: 100%;
+  height: auto;
+}
+
+.bannerText {
+  position: absolute;
+  top: 40%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  color: #B84234;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.bannerText h1 {
+  text-align: left;
+  font-size: 2.5rem;
+  color: #B84234
+}
+
+.bannerText h2 {
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+.introText {
+  font-size: 25px;
+  color: black;
+  margin: 20px 0;
+  animation: fadeIn 3s ease-in-out;
+  padding: 10px;
+  text-align: left;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.block {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  transition: transform 0.3s ease;
+  box-sizing: border-box;
+  animation: fadeIn 1s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.fullWidthBlock {
+  grid-column: span 3;
+}
+
+.block:hover {
+  transform: translateY(-10px);
+}
+
+.block h3 {
+  font-size: 24px;
+  color: #B84234;
+}
+
+.block p {
+  font-size: 16px;
+  color: #666;
+  text-align: left;
+}
+
+footer {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+footer h3 {
+  font-size: 24px;
+  color: #B84234;
+}
+
+footer p {
+  font-size: 16px;
+  color: #666;
+}
+
+.icon {
+  margin-bottom: 10px;
+}
+
+.icon1 {
+  height: 40px;
+  width: 40px;
+}
+
+.eventImage {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.ThrivingCommunity {
+  background-color: #B84234;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ThrivingCommunity p {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.KnowMoreButton {
+  border: 1px solid white;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.KnowMoreButton:hover {
+  background-color: #d2776d;
+  color: white;
+}
+
+@media (max-width: 1024px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+
+  .fullWidthBlock {
+    grid-column: span 1;
+  }
+
+  .bannerText h1 {
+    font-size: 1.5rem;
+  }
+
+  .bannerText h2 {
+    font-size: 1.2rem;
+  }
+
+  .introText {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .bannerText h1 {
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  .bannerText h2 {
+    font-size: .8rem;
+  }
+
+  .introText {
+    font-size: 18px;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

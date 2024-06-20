@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 import classes from "./Header.module.css";
 import logo from './logo.png';
 import login from './log-in.png';
@@ -10,14 +11,23 @@ const Header = () => {
 
   const toggleProgramsDropdown = () => {
     setIsProgramsOpen(!isProgramsOpen);
+    if (!isProgramsOpen) {
+      setIsResourcesOpen(false);
+    }
   };
 
   const toggleResourcesDropdown = () => {
     setIsResourcesOpen(!isResourcesOpen);
+    if (!isResourcesOpen) {
+      setIsProgramsOpen(false);
+    }
   };
 
-  const toggleMobileNav = () => {
-    setIsMobileNavOpen(!isMobileNavOpen);
+  const toggleMobileNav = () => setIsMobileNavOpen(!isMobileNavOpen);
+
+  const closeDropdowns = () => {
+    setIsProgramsOpen(false);
+    setIsResourcesOpen(false);
   };
 
   return (
@@ -25,41 +35,37 @@ const Header = () => {
       <div className={classes.LogoContainer}>
         <img src={logo} alt="Logo" className={classes.Logo} />
       </div>
-      <div className={classes.Hamburger} onClick={toggleMobileNav}>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-      <div className={`${classes.NavContainer} ${isMobileNavOpen ? classes.MobileNav : ''}`}>
-        <button className={classes.HeaderItem}>Home</button>
-        <button className={classes.HeaderItem}>About Us</button>
+      <nav className={`${classes.NavContainer} ${isMobileNavOpen ? classes.MobileNav : ''}`}>
+        <NavLink to="/" className={({ isActive }) => isActive ? `${classes.HeaderItem} ${classes.Active}` : classes.HeaderItem} onClick={closeDropdowns}>Home</NavLink>
+        <NavLink to="/about" className={({ isActive }) => isActive ? `${classes.HeaderItem} ${classes.Active}` : classes.HeaderItem} onClick={closeDropdowns}>About Us</NavLink>
         <div className={classes.DropdownContainer}>
           <button className={classes.HeaderItem} onClick={toggleProgramsDropdown}>
             Our Programs
           </button>
           {isProgramsOpen && (
             <div className={classes.DropdownContent}>
-              <button className={classes.DropdownItem}>Yuva Udyami Chetna Kendra</button>
-              <button className={classes.DropdownItem}>Adhyatmik Jagruti Kendra</button>
+              <NavLink to="/ourprogram" className={({ isActive }) => isActive ? `${classes.DropdownItem} ${classes.Active}` : classes.DropdownItem} onClick={closeDropdowns}>Our Programs</NavLink>
+              <NavLink to="/ourprogram/yuvaudyami" className={({ isActive }) => isActive ? `${classes.DropdownItem} ${classes.Active}` : classes.DropdownItem} onClick={closeDropdowns}>Yuva Udyami Chetna Kendra</NavLink>
+              <NavLink to="/ourprogram/adj" className={({ isActive }) => isActive ? `${classes.DropdownItem} ${classes.Active}` : classes.DropdownItem} onClick={closeDropdowns}>Adhyatmik Jagruti Kendra</NavLink>
             </div>
           )}
         </div>
-        <button className={classes.HeaderItem}>Impact</button>
-        <button className={classes.HeaderItem}>Our Partner</button>
+        <NavLink to="/impact" className={({ isActive }) => isActive ? `${classes.HeaderItem} ${classes.Active}` : classes.HeaderItem} onClick={closeDropdowns}>Impact</NavLink>
+        <NavLink to="/partner" className={({ isActive }) => isActive ? `${classes.HeaderItem} ${classes.Active}` : classes.HeaderItem} onClick={closeDropdowns}>Our Partner</NavLink>
         <div className={classes.DropdownContainer}>
           <button className={classes.HeaderItem} onClick={toggleResourcesDropdown}>
             Resources
           </button>
           {isResourcesOpen && (
             <div className={classes.DropdownContent}>
-              <button className={classes.DropdownItem}>Blog</button>
-              <button className={classes.DropdownItem}>Success Stories</button>
-              <button className={classes.DropdownItem}>Events</button>
+              <NavLink to="/blog" className={({ isActive }) => isActive ? `${classes.DropdownItem} ${classes.Active}` : classes.DropdownItem} onClick={closeDropdowns}>Blog</NavLink>
+              <NavLink to="/success" className={({ isActive }) => isActive ? `${classes.DropdownItem} ${classes.Active}` : classes.DropdownItem} onClick={closeDropdowns}>Success Stories</NavLink>
+              <NavLink to="/event" className={({ isActive }) => isActive ? `${classes.DropdownItem} ${classes.Active}` : classes.DropdownItem} onClick={closeDropdowns}>Events</NavLink>
             </div>
           )}
         </div>
-        <button className={classes.HeaderItem}>Contact</button>
-      </div>
+        <NavLink to="/contact" className={({ isActive }) => isActive ? `${classes.HeaderItem} ${classes.Active}` : classes.HeaderItem} onClick={closeDropdowns}>Contact</NavLink>
+      </nav>
       <button className={classes.SignUpButton}>
         <span className={classes.LoginText}>Login / Sign Up</span>
         <img src={login} alt="Login" className={classes.LoginIcon} />

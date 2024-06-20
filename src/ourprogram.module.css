@@ -1,0 +1,261 @@
+.ourprogram {
+    max-width: 1400px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.header {
+    position: relative;
+    text-align: left;
+    background-image: url('our programs (2).jpg');
+    background-size: contain; 
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px; 
+    overflow: hidden;
+}
+
+.headerContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    width: 80%;
+}
+
+.headerContent h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #b84234;
+    text-align: left;
+}
+
+.headerContent p {
+    font-size: 1.5rem;
+    color: black;
+    text-align: left;
+}
+
+.pointsSection {
+    margin: 0 auto;
+    padding: 40px 0;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    height: auto;
+}
+
+.pointsSection h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #B84234;
+}
+
+.pointsSection p {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+}
+
+.pointsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.pointCard {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: fit-content;
+}
+
+.pointCard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.colorBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 100%;
+}
+
+.iconAndText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 100%;
+}
+
+.pointIcon {
+    width: 80px; 
+    height: 80px; 
+}
+
+.pointText {
+    text-align: center;
+}
+
+.pointText h3 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.pointText p {
+    font-size: 1em;
+    color: #555;
+}
+
+.additionalContent {
+    margin: 40px auto;
+    max-width: 1400px;
+    text-align: left;
+    font-size: 1.5rem;
+    color: black;
+    padding: 10px;
+}
+
+.bottomCard {
+    width: calc(50% - 20px);
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.bottomCardsContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.bottomCard {
+    width: 48%;
+    margin-bottom: 20px;
+}
+
+.bottomCardContent {
+    padding: 20px;
+    text-align: center;
+}
+
+.bottomCardContent h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #b8685f;
+}
+
+.bottomCardContent p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.learnMoreButton {
+    background-color: #B84234;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    align-items: center;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.learnMoreButton:hover {
+    background-color: #a3281f;
+}
+
+.ThrivingCommunity {
+    background-color: #B84234;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  .ThrivingCommunity P{
+    color: white;
+    font-size: 1.5rem;
+  }
+
+  .KnowMoreButton {
+    border: 1px solid white;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .KnowMoreButton:hover {
+    background-color:  #d2776d;
+    color: white;
+  }
+@media (max-width: 768px) {
+    .headerContent h1 {
+        font-size: 2em;
+    }
+
+    .headerContent p {
+        font-size: 1em;
+    }
+
+    .pointsSection h2 {
+        font-size: 1.8em;
+    }
+
+    .pointsSection p {
+        font-size: 1em;
+    }
+
+    .pointContent {
+        padding: 10px;
+    }
+
+    .header {
+        height: auto; 
+        padding-top: 60%; 
+    }
+
+    .headerContent {
+        width: 90%; 
+    }
+
+    .bottomCardsContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bottomCard {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
